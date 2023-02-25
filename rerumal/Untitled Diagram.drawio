@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-25T15:14:30.505Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.56" etag="4URYK_8jlfPofrrCb09K" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-25T15:21:26.609Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.56" etag="FZSNwtRpcAEBwPXZ2K3a" version="20.8.23" type="github">
   <diagram name="Page-1" id="y1dAeT7xC99VqLzQ5ByR">
     <mxGraphModel dx="1644" dy="1562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -67,6 +67,18 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="iQKLv8ELs9eyA_wGUFIE-28" value="Automated CI/CD" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="iQKLv8ELs9eyA_wGUFIE-2">
+          <mxGeometry x="300" y="80.75" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iQKLv8ELs9eyA_wGUFIE-31" value="Certificate creation" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="iQKLv8ELs9eyA_wGUFIE-2">
+          <mxGeometry x="210" y="162.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iQKLv8ELs9eyA_wGUFIE-32" value="Resume static files storage" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="iQKLv8ELs9eyA_wGUFIE-2">
+          <mxGeometry x="388" y="212.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iQKLv8ELs9eyA_wGUFIE-33" value="API gateway with lamba and Dynamo DB for getting user/page hit count" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="iQKLv8ELs9eyA_wGUFIE-2">
+          <mxGeometry x="372" y="320" width="209" height="20" as="geometry" />
+        </mxCell>
         <mxCell id="iQKLv8ELs9eyA_wGUFIE-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="iQKLv8ELs9eyA_wGUFIE-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="120" y="278" as="sourcePoint" />
@@ -98,6 +110,9 @@
               <mxPoint x="380" y="450" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="iQKLv8ELs9eyA_wGUFIE-29" value="DNS acces" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="290" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
