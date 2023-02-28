@@ -1,8 +1,9 @@
 name: deploy-app-on-s3
 on:
-  pull_request:
-    branches: [master]
-    types: [closed]
+  push:
+    paths:
+      - 'rerumal/**'
+      - '!rerumal/README.md'
 jobs:
   deploy:
     runs-on: ubuntu-latest
