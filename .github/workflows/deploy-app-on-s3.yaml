@@ -13,7 +13,7 @@ jobs:
       matrix:
         node-version: [10.x]
     steps:
-      - uses: ragerumal/cloudresume/s3-sync-action@master
+      - uses: jakejarvis/s3-sync-action@master
         name: Upload App to S3 Bucket
         with:
           args: --follow-symlinks --delete
@@ -24,7 +24,7 @@ jobs:
           AWS_REGION: "us-east-1"
           SOURCE_DIR: "dist"
       - name: Create CloudFront Cache Invalidation
-        uses: ragerumal/cloudresume/invalidate-cloudfront-action@master
+        uses: chetan/invalidate-cloudfront-action@master
         env:
           DISTRIBUTION: ${{ env.AWS_CF_DISTRIBUTION_ID }}
           PATHS: "/*"
