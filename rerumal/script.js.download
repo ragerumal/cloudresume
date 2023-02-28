@@ -7,7 +7,7 @@ const getvisitors = async () => {
     const data = await res.json();
     console.log(data);
     body = data.visitor;
-    document.getElementById("visit:  ").insertAdjacentHTML("afterbegin", body);
+    document.getElementById("visit: ").insertAdjacentHTML("afterbegin", body);
   } catch (err) {
     console.error(err);
   }
