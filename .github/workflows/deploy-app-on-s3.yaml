@@ -14,8 +14,9 @@ jobs:
       matrix:
         node-version: [10.x]
     steps:
-      - uses: jakejarvis/s3-sync-action@master
-        name: Upload App to S3 Bucket
+     - name: S3 Sync
+       uses: jakejarvis/s3-sync-action@v0.5.1
+
         with:
           args: --follow-symlinks --delete
         env:
