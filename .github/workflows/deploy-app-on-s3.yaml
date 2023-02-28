@@ -17,9 +17,9 @@ jobs:
     steps:
      - name: S3 Sync
        uses: jakejarvis/s3-sync-action@v0.5.1
-        with:
+       with:
           args: --follow-symlinks --delete
-        env:
+       env:
           AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -27,7 +27,8 @@ jobs:
           SOURCE_DIR: "cloudresume"
      - name: Invalidate CloudFront
        uses: chetan/invalidate-cloudfront-action@v2
-        env:
+        
+       env:
           DISTRIBUTION: ${{ env.AWS_CF_DISTRIBUTION_ID }}
           PATHS: "/*"
           AWS_REGION: "us-east-1"
