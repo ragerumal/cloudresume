@@ -1,13 +1,20 @@
 const getvisitors = async () => {
   try {
-    const url =
-      "https://lizxxxxxxx.execute-api.us-east-1.amazonaws.com/example/MyDemoResource";
-    const res = await fetch(url);
-    console.log(res.ok);
-    const data = await res.json();
-    console.log(data);
-    body = data.visitor;
-    document.getElementById("visit:- -").insertAdjacentHTML("afterbegin", body);
+
+    const response = await fetch("https://s9p5m2afg2.execute-api.us-east-1.amazonaws.com/cloud", {
+    method: 'POST',
+
+  });
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson)
+  // do something with myJson
+  const response1 = await fetch("https://s9p5m2afg2.execute-api.us-east-1.amazonaws.com/cloud", {
+    method: 'GET',
+
+  });
+  const myJson1 = await response1.json(); //extract JSON from the http response
+  console.log(myJson1)
+    //document.getElementById("visit").insertAdjacentHTML("afterbegin", myJson1);
   } catch (err) {
     console.error(err);
   }
