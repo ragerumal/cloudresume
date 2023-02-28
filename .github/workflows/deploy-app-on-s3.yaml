@@ -4,6 +4,7 @@ on:
     paths:
       - 'rerumal/**'
       - '!rerumal/README.md'
+      - '!rerumal/.github/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
