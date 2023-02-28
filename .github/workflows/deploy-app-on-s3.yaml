@@ -15,7 +15,7 @@ jobs:
       matrix:
         node-version: [10.x]
     steps:
-     - name: S3 Sync
+       name: S3 Sync
        uses: jakejarvis/s3-sync-action@v0.5.1
         with:
           args: --follow-symlinks --delete
@@ -25,7 +25,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "us-east-1"
           SOURCE_DIR: "cloudresume"
-     - name: Invalidate CloudFront
+       name: Invalidate CloudFront
        uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ env.AWS_CF_DISTRIBUTION_ID }}
