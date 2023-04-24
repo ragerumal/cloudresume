@@ -14,7 +14,7 @@ const getvisitors = async () => {
   });
   const myJson1 = await response1.json(); //extract JSON from the http response
   console.log(myJson1)
-    //document.getElementById("visit: ").insertAdjacentHTML("afterbegin", myJson1);
+    //document.getElementById("visit:  ").insertAdjacentHTML("afterbegin", myJson1);
   } catch (err) {
     console.error(err);
   }
